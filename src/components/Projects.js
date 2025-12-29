@@ -9,7 +9,7 @@ const [listProjects] = useState([
     name: 'Personal Portolio -React',
     des: 'Devloper',
     github:'',
-    images: '/portfolio.PNG'
+    images: '/portfolio.png'
   },
   {
     name: 'Text to Logo',
@@ -21,7 +21,7 @@ const [listProjects] = useState([
     name: 'Blog Application - Console Based',
     des: 'Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.',
     github:'https://github.com/naresh-rn/Blog-Application-java-console-Application_',
-    images: '/blogApp.PNG'
+    images: '/blogApp.png'
   },
   {
     name: 'Fetch API',
