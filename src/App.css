@@ -13,7 +13,7 @@ body{
         to right, transparent 0 49px, #eee1 49px
     ),
     linear-gradient(
-        to bottom, transparent 0 49px, #eee1 49px
+        to bottom, transparent 0 49px, #eee1 490px
     );
     background-size: 50px 50px;
     &::before{
@@ -29,17 +29,18 @@ body{
         left: calc(50% - 200px);
         border-radius: 50% 50% 0% 0%;
         pointer-events: none;
-        filter: blur(250px);
+        filter: blur(240px);
     }
 }
 main{
-    width: 1300px;
+    width: 1200px;
     max-width: 100%;
     margin: auto;
 }
 
 /* navbar */
 header{
+    font-size: 17px;
     position: fixed;
     width: 1300px;
     max-width: 100%;
@@ -93,7 +94,7 @@ section{
     animation-delay: 0.6s!important;
 } */
 section.home{
-    padding-top: 150px;
+    padding-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
@@ -103,10 +104,11 @@ section.home{
     & .content{
         font-family: 'MuseoModerno', system-ui;
         & .name{
-            font-size: 7em;
-            font-weight: bold;
+            font-size: 5em;
+            font-weight:lighter;
             line-height: 1em;
             & span{
+                font-weight: bold;
                 background-image: linear-gradient(to right, #7BE728, #F3265F, #7F40AC, #7BE728);
                 background-size: 200% auto;
                 -webkit-text-fill-color: transparent;
@@ -138,7 +140,7 @@ section.home{
         & .card{
             display: inline-flex;
             flex-direction: column;
-            width: min(100%, 400px);
+            width: min(100%, 500px);
             box-shadow: 0 150px 150px #e945e333;
             transition: 0.5s;
             &:hover{
@@ -146,24 +148,12 @@ section.home{
             }
             & img{
                 width: 100%;
-                height: min(50vh, 700px);
+                height: min(80vh, 700px);
                 object-fit: cover;
                 object-position: top;
                 clip-path: polygon(81% 0, 100% 18%, 100% 100%, 0 100%, 0 0);
             }
-            & .info{
-                background-color: #eee; 
-                color: #010824;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                text-align: center;
-                gap: 20px;
-                padding: 20px;
-                font-size: 1.2em;
-                & div:nth-child(1), div:nth-child(2), div:nth-child(3){
-                    font-weight: bold;
-                }
-            }
+            
         }
     }
 }
@@ -182,9 +172,9 @@ section.skills{
     & .list{
         margin-top: 50px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         justify-content: space-between;
-        gap: 3vw;
+        gap: 5vw;
         position: relative;
         &::before{
             position: absolute;
@@ -202,10 +192,10 @@ section.skills{
             background-size: 200% auto;
         }
         & .item{
-            backdrop-filter: blur(50px);
+            backdrop-filter: blur(70px);
             padding: 20px;
             border-radius: 20px;
-            background-color: #01082488;
+            background-color: #15153a88;
             & svg{
                 font-size: 30px;
                 background-color: #eee2;
@@ -228,7 +218,7 @@ section.projects{
         font-family: 'MuseoModerno', system-ui;
     }
     & .des{
-        color: #eee5;
+        color: rgba(238, 238, 238, 0.788);
         text-align: center;
         max-width: 500px;
         margin: auto;
@@ -241,7 +231,7 @@ section.projects{
             justify-content: space-between;
             align-items: center;
             margin-bottom: 100px;
-            gap: 20px;
+            gap: 50px;
             & .images{
                 background-image: linear-gradient(
                     -45deg, #473bb4, #be24a9
@@ -259,25 +249,14 @@ section.projects{
             }
             & .content{
                 & h3{
-                    font-size: 3em;
+                    font-size: 2.5em;
                     margin: 0;
+                    padding: 15px 0px;
                 }
                 & .des{
                     text-align: left;
                     width: 100%;
-                }
-                & .mission{
-                    display: grid;
-                    grid-template-columns: 70px 1fr;
-                    align-items: center;
-                    gap: 10px;
-                    margin-top: 10px;
-                    & div:nth-child(1) svg{
-                        background-color: #eee3;
-                        padding: 20px;
-                        font-size: 20px;
-                        border-radius: 15px;
-                    }
+                    padding: px 0px;
                 }
             }
         }
@@ -296,7 +275,7 @@ section.projects{
 }
 
 section.contacts{
-    padding-bottom: 220px;
+    padding-bottom: 150px;
     & .title{
         text-align: center;
         font-size: 5vw;
@@ -309,6 +288,7 @@ section.contacts{
         margin: auto;
     }
     & .list{
+        font-size: 17px;
         text-align: center;
         & .item{
             margin-top: 50px;
@@ -411,4 +391,21 @@ section.contacts{
             left: 0;
         } 
     }
+}
+
+
+.btn-github {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-github:hover {
+  background-color: #000;
 }
