@@ -10,7 +10,7 @@ function App() {
 
   return (
     <main>
-      {/* <NavBar /> */}
+      <NavBar />
       <Home />
       <Skills />
       <Projects />
