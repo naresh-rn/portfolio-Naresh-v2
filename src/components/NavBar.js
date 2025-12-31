@@ -21,7 +21,7 @@ const NavBar = ({activeTab}) => {
             <div className="logo">
                 <img src="" alt=""/> Naresh Dev
             </div>
-            {/* <nav className={statusNav}>
+            <nav className={statusNav}>
                 {
                 linkNav.map(value => (
                     <span key={value} 
@@ -29,8 +29,8 @@ const NavBar = ({activeTab}) => {
                     onClick={()=>changeTab(value)}>{value}</span>
                 ))
                 }
-            </nav> */}
-            <p><a href="https://www.linkedin.com/in/naresh-rn" />Linkedin</p>
+            </nav>
+            {/* <p><a href="https://www.linkedin.com/in/naresh-rn" />Linkedin</p> */}
             <div className="icon-bar" onClick={toggleNav}>
                 <FontAwesomeIcon icon={faBars} />
             </div>
