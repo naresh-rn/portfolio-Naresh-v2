@@ -7,7 +7,9 @@ const divs = refList;
 const activeTab = useSelector(state => state.activeTab);
 
 useEffect(() => {
-    if(scrollTab.current.classList.contains(activeTab)){
+    const activeTabLower = activeTab.toLowerCase(); 
+
+    if(scrollTab.current.classList.contains(activeTabLower)){
         const componentNode = scrollTab.current;
         componentNode.scrollIntoView({ behavior: 'smooth' });
     }
