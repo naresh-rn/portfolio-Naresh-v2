@@ -7,25 +7,25 @@ function Projects() {
 const [listProjects] = useState([
   {
     name: 'Personal Portolio -React',
-    des: 'Devloper',
-    github:'',
+    des: 'Passionate Frontend Developer specializing in React and Redux for building scalable, high-performance web applications. Focused on clean code, reusable components, and seamless user experiences.',
+    github:'https://github.com/naresh-rn/portfolio-Naresh-v2.git',
     images: '/portfolio.png'
   },
   {
     name: 'Text to Logo',
-    des: 'creating text into logo png',
-    github:'',
+    des: 'A MERN stack mini project that transforms text into custom logo designs. Features real-time editing and responsive UI. Allows users to export logos in PNG format.',
+    github:'https://github.com/naresh-rn/Text-to-Logo.git',
     images: '/logooo.PNG'
   },
   {
     name: 'Blog Application - Console Based',
-    des: 'Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.',
+    des: 'A console-based Java blog application using JDBC and MySQL. Features role-based authentication for secure access management. Allows users to manage blog posts based on assigned roles..',
     github:'https://github.com/naresh-rn/Blog-Application-java-console-Application_',
     images: '/blogApp.png'
   },
   {
     name: 'Fetch API',
-    des: 'Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.',
+    des: 'A simple React project that consumes a product API using Fetch. Renders product lists dynamically from server responses. Demonstrates basic API integration and state handling.',
     github:'https://github.com/naresh-rn/work_shop_FETCH-api.git',
     images: '/FetchAPI.PNG'
   },
